@@ -1,5 +1,4 @@
-package models
-
+// Package models
 /* Copyright 2021 Jan Tytgat
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,13 +13,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+package models
 
-type Target struct {
-	Name                string `yaml:"Name"`
-	Type                string `yaml:"Type"`
-	Level               string `yaml:"Level"`
-	Nodes               []Node `yaml:"Nodes"`
-	ValidateCertificate bool   `yaml:"ValidateCertificate"`
-	Username            string `yaml:"Username"`
-	Password            string `yaml:"Password"`
+type Node struct {
+	Name    string `yaml:"Name"`
+	Address string `yaml:"Address"`
 }
